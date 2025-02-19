@@ -1,0 +1,177 @@
+<!DOCTYPE html>
+<html lang="th">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>สินค้า - ร้านขายของเล่น</title>
+    <link rel="stylesheet" href="styles.css">
+    <style>
+        body {
+            background-color: #e0f7fa;
+            font-family: 'Comic Sans MS', cursive, sans-serif;
+            text-align: center;
+        }
+        header {
+            background-color: #03a9f4;
+            color: white;
+            padding: 15px;
+            border-radius: 10px;
+        }
+        nav ul {
+            list-style: none;
+            padding: 0;
+        }
+        nav ul li {
+            display: inline;
+            margin: 0 15px;
+        }
+        nav ul li a {
+            text-decoration: none;
+            color: white;
+            font-weight: bold;
+        }
+        main {
+            margin: 20px;
+        }
+        .product-grid {
+            display: grid;
+            grid-template-columns: repeat(auto-fit, minmax(200px, 1fr));
+            gap: 20px;
+            padding: 20px;
+        }
+        .product {
+            background-color: white;
+            padding: 10px;
+            border-radius: 10px;
+            box-shadow: 2px 2px 10px rgba(0, 0, 0, 0.1);
+            position: relative;
+        }
+        .product img {
+            width: 100%;
+            border-radius: 10px;
+            transition: transform 0.3s ease;
+        }
+        .product:hover img {
+            transform: scale(1.2);
+        }
+        .enlarged-image {
+            position: absolute;
+            top: 0;
+            left: 0;
+            z-index: 10;
+            border-radius: 10px;
+            display: none;
+        }
+        footer {
+            margin-top: 20px;
+            background-color: #03a9f4;
+            color: white;
+            padding: 10px;
+            border-radius: 10px;
+        }
+    </style>
+</head>
+<body>
+    <header>
+        <h1>สินค้าของเรา</h1>
+        <nav>
+            <ul>
+                <li><a href="index.html">หน้าหลัก</a></li>
+                <li><a href="product.html">สินค้า</a></li>
+                <li><a href="register.html">สมัครสมาชิก</a></li>
+                <li><a href="howtobuy.html">วิธีการสั่งซื้อ</a></li>
+                <li><a href="checkout.html">ชำระเงิน</a></li>
+                <li><a href="aboutme.html">ติดต่อเรา</a></li>
+            </ul>
+        </nav>
+    </header>
+    
+    <main>
+        <section class="product-grid">
+            <div class="product">
+                <img src="image/toy1.jpg" alt="ตุ๊กตาหมี" class="enlargeable">
+                <p>ตุ๊กตาหมีน่ารัก</p>
+                <p>299 บาท</p>
+            </div>
+            <div class="product">
+                <img src="image/toy2.jpg" alt="รถของเล่น" class="enlargeable">
+                <p>รถบังคับ</p>
+                <p>599 บาท</p>
+            </div>
+            <div class="product">
+                <img src="image/toy3.jpg" alt="เลโก้" class="enlargeable">
+                <p>ชุดเลโก้ซิตี้</p>
+                <p>899 บาท</p>
+            </div>
+            <div class="product">
+                <img src="image/toy4.jpg" alt="ตัวต่อ" class="enlargeable">
+                <p>ตัวต่อสร้างสรรค์</p>
+                <p>459 บาท</p>
+            </div>
+            <div class="product">
+                <img src="image/toy5.jpg" alt="ตุ๊กตาบาร์บี้" class="enlargeable">
+                <p>ตุ๊กตาบาร์บี้แฟชั่น</p>
+                <p>699 บาท</p>
+            </div>
+            <div class="product">
+                <img src="image/toy6.jpg" alt="หุ่นยนต์" class="enlargeable">
+                <p>หุ่นยนต์แปลงร่าง</p>
+                <p>799 บาท</p>
+            </div>
+            <div class="product">
+                <img src="image/toy7.jpg" alt="ชุดครัว" class="enlargeable">
+                <p>ชุดครัวจำลอง</p>
+                <p>399 บาท</p>
+            </div>
+            <div class="product">
+                <img src="image/toy8.jpg" alt="จิ๊กซอว์" class="enlargeable">
+                <p>จิ๊กซอว์ 1000 ชิ้น</p>
+                <p>259 บาท</p>
+            </div>
+            <div class="product">
+                <img src="image/toy9.jpg" alt="ปืนน้ำ" class="enlargeable">
+                <p>ปืนฉีดน้ำซุปเปอร์</p>
+                <p>199 บาท</p>
+            </div>
+            <div class="product">
+                <img src="image/toy10.jpg" alt="ลูกบอล" class="enlargeable">
+                <p>ลูกบอลสีรุ้ง</p>
+                <p>159 บาท</p>
+            </div>
+            <div class="product">
+                <img src="image/toy11.jpg" alt="เครื่องบิน" class="enlargeable">
+                <p>เครื่องบินบังคับ</p>
+                <p>659 บาท</p>
+            </div>
+            <div class="product">
+                <img src="image/toy12.jpg" alt="ดินน้ำมัน" class="enlargeable">
+                <p>ชุดดินน้ำมันสร้างสรรค์</p>
+                <p>39 บาท</p>
+            </div>
+        </section>
+    </main>
+    
+    <footer>
+        <p>รหัสนักศึกษา 661102064116</p>
+        <p>ชื่อ-สกุล นายภิรวัส พิกุลทอง</p>
+        <p>สาขาวิชา วิทยาการคอมพิวเตอร์</p>
+    </footer>
+
+    <script>
+        const products = document.querySelectorAll('.product img');
+        products.forEach(img => {
+            img.addEventListener('mouseover', () => {
+                img.style.transform = 'scale(1.5)';
+                img.style.zIndex = '10';
+                img.style.position = 'relative';
+            });
+
+            img.addEventListener('mouseout', () => {
+                img.style.transform = 'scale(1)';
+                img.style.zIndex = '1';
+                img.style.position = 'relative';
+            });
+        });
+    </script>
+</body>
+</html>

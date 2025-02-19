@@ -1,0 +1,209 @@
+<!DOCTYPE html>
+<html lang="th">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>หน้าหลัก - ร้านขายของเล่น</title>
+    <link rel="stylesheet" href="styles.css">
+    <style>
+        body {
+            background-color: #e0f7fa;
+            font-family: 'Comic Sans MS', cursive, sans-serif;
+            text-align: center;
+        }
+        header {
+            background-color: #03a9f4;
+            color: white;
+            padding: 15px;
+            border-radius: 10px;
+        }
+        nav ul {
+            list-style: none;
+            padding: 0;
+        }
+        nav ul li {
+            display: inline;
+            margin: 0 15px;
+        }
+        nav ul li a {
+            text-decoration: none;
+            color: white;
+            font-weight: bold;
+        }
+        main {
+            margin: 20px;
+        }
+        .form-container {
+            background-color: white;
+            padding: 30px;
+            border-radius: 15px;
+            box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
+            display: inline-block;
+            text-align: left;
+            max-width: 400px;
+            width: 100%;
+            margin: 20px auto;
+        }
+        .product-container {
+            background-color: white;
+            padding: 20px;
+            border-radius: 10px;
+            box-shadow: 2px 2px 10px rgba(0, 0, 0, 0.1);
+            display: inline-block;
+            text-align: center;
+            margin: 20px auto;
+        }
+        .product-slider {
+            overflow-x: auto;
+            white-space: nowrap;
+            padding: 20px;
+        }
+    
+        label {
+            color: #333;
+            font-weight: bold;
+            margin-bottom: 5px;
+        }
+    
+        input, select {
+            width: 100%;
+            padding: 12px;
+            border-radius: 8px;
+            border: 2px solid #e0e0e0;
+            margin-bottom: 20px;
+            transition: border-color 0.3s ease;
+        }
+    
+        input:focus, select:focus {
+            outline: none;
+            border-color: #03a9f4;
+        }
+    
+        input[type="file"] {
+            padding: 8px;
+            border: 2px dashed #ccc;
+            background-color: #f8f9fa;
+        }
+    
+        button {
+            width: 100%;
+            background-color: #03a9f4;
+            color: white;
+            border: none;
+            padding: 15px;
+            border-radius: 8px;
+            cursor: pointer;
+            font-size: 16px;
+            font-weight: bold;
+            transition: background-color 0.3s ease;
+        }
+    
+        button:hover {
+            background-color: #0288d1;
+        }
+        footer {
+            margin-top: 20px;
+            background-color: #03a9f4;
+            color: white;
+            padding: 10px;
+            border-radius: 10px;
+        }
+    </style>
+</head>
+<body>
+    <img src="image/bg.png" alt="Background image" style="width: 70%; height: 50%; object-fit: cover; color: white; margin: 20px auto; display: block;">
+    <header>
+        <nav>
+            <ul >
+                <li><a href="index.html">หน้าหลัก</a></li>
+                <li><a href="product.html">สินค้า</a></li>
+                <li><a href="register.html">สมัครสมาชิก</a></li>
+                <li><a href="howtobuy.html">วิธีการสั่งซื้อ</a></li>
+                <li><a href="checkout.html">ชำระเงิน</a></li>
+                <li><a href="aboutme.html">ติดต่อเรา</a></li>
+            </ul>
+        </nav>
+    </header>
+    
+    <main>
+            <div class="form-container" >
+                <h2>ยินดีต้อนรับสู่ร้านของเล่นของเรา</h2>
+                <p>เราคือร้านจำหน่ายของเล่นคุณภาพดี ราคาเป็นมิตร</p>
+                <p>มีสินค้าหลากหลายประเภท เช่น</p>
+                <ul>
+                    <li>ตุ๊กตา</li>
+                    <li>เลโก้</li>
+                    <li>รถของเล่น</li>
+                    <li>ของเล่นเสริมพัฒนาการ</li>
+                    <li>เกมกระดาน</li>
+                </ul>
+                <p>เรามีบริการจัดส่งทั่วประเทศ และรับประกันสินค้าทุกชิ้น</p>
+                <button onclick="location.href='product.html'">ไปยังหน้าสินค้าทั้งหมด</button>
+            </div><br>
+            <div class="product-container"> 
+                <h2>สินค้าใหม่ 📦</h2>
+              </div>
+
+        <div class="product-slider" style="overflow-x: auto; white-space: nowrap; padding: 20px;">
+            <div style="display: inline-block; margin: 10px; background: white; padding: 15px; border-radius: 8px; width: 200px;">
+                <img src="image/toy1.jpg" alt="ตุ๊กตาหมี" style="width: 180px; height: 180px; object-fit: cover;">
+                <h3>ตุ๊กตาหมี</h3>
+                <p style="color: red;">ราคา 299 บาท</p>
+            </div>
+            <div style="display: inline-block; margin: 10px; background: white; padding: 15px; border-radius: 8px; width: 200px;">
+                <img src="image/toy3.jpg" alt="เลโก้" style="width: 180px; height: 180px; object-fit: cover;">
+                <h3>ชุดเลโก้</h3>
+                <p style="color: red;">ราคา 899 บาท</p>
+            </div>
+            <div style="display: inline-block; margin: 10px; background: white; padding: 15px; border-radius: 8px; width: 200px;">
+                <img src="image/toy2.jpg" alt="รถบังคับ" style="width: 180px; height: 180px; object-fit: cover;">
+                <h3>รถบังคับ</h3>
+                <p style="color: red;">ราคา 599 บาท</p>
+            </div>
+            <div style="display: inline-block; margin: 10px; background: white; padding: 15px; border-radius: 8px; width: 200px;">
+                <img src="image/toy4.jpg" alt="ตัวต่อสร้างสรรค์" style="width: 180px; height: 180px; object-fit: cover;">
+                <h3>ตัวต่อสร้างสรรค์</h3>
+                <p style="color: red;">ราคา 399 บาท</p>
+            </div>
+            <div style="display: inline-block; margin: 10px; background: white; padding: 15px; border-radius: 8px; width: 200px;">
+                <img src="image/toy5.jpg" alt="ตุ๊กตาบาร์บี้แฟชั่น" style="width: 180px; height: 180px; object-fit: cover;">
+                <h3>ตุ๊กตาบาร์บี้แฟชั่น</h3>
+                <p style="color: red;" >ราคา 799 บาท</p>
+            </div>
+            <div style="display: inline-block; margin: 10px; background: white; padding: 15px; border-radius: 8px; width: 200px;">
+                <img src="image/toy6.jpg" alt="หุ่นยนต์แปลงร่าง" style="width: 180px; height: 180px; object-fit: cover;">
+                <h3>หุ่นยนต์แปลงร่าง</h3>
+                <p style="color: red;">ราคา 459 บาท</p>
+            </div>
+            <div style="display: inline-block; margin: 10px; background: white; padding: 15px; border-radius: 8px; width: 200px;">
+                <img src="image/toy7.jpg" alt="ชุดของเล่นทำครัว" style="width: 180px; height: 180px; object-fit: cover;">
+                <h3>ชุดของเล่นทำครัว</h3>
+                <p style="color: red;">ราคา 259 บาท</p>
+            </div>
+        </div>
+    </main>
+    
+    <footer>
+        <p>รหัสนักศึกษา 661102064116</p>
+        <p>ชื่อ-สกุล นายภิรวัส พิกุลทอง</p>
+        <p>สาขาวิชา วิทยาการคอมพิวเตอร์</p>
+    </footer>
+
+    <script>
+        const products = document.querySelectorAll('.product-slider img');
+        products.forEach(img => {
+            img.addEventListener('mouseover', () => {
+                img.style.transform = 'scale(1.5)';
+                img.style.zIndex = '10';
+                img.style.position = 'relative';
+            });
+
+            img.addEventListener('mouseout', () => {
+                img.style.transform = 'scale(1)';
+                img.style.zIndex = '1';
+                img.style.position = 'relative';
+            });
+        });
+    </script>
+</body>
+</html>
